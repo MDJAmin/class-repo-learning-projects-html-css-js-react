@@ -114,6 +114,21 @@ body {
   }
 }
 
+/* Footer  */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bxl-youtube,.bxl-instagram,.bxl-twitter{
+  color: white;
+}
+
 /* .test_btn{
     margin: 5%;
     border: blue solid 2px;
