@@ -44,7 +44,7 @@ if (token) {
 // Handle logout
 logoutIcon.addEventListener("click", () => {
   localStorage.removeItem("token"); // Remove token
-  window.location.href = "Auth/index.html"; // Redirect to login page
+  window.location.href = "Pages/index.html"; // Redirect to login page
 });
 
 // Handle animations on scroll
