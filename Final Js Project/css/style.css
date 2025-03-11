@@ -22,7 +22,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* Nav Bar*/
+/* Nav Bar */
 
 .nav_bar {
   display: flex;
@@ -130,7 +130,7 @@ body {
   }
 }
 
-/* Hero section*/
+/* Hero section */
 .hero_back_ground{
   background-color: #EBEBEB;
   border-radius: 25px;
@@ -166,16 +166,71 @@ body {
   border-radius: 15px;
   width: 312px;
   height: 60px;
-  font-size: 28px;
+  font-size: 26px;
   color: #FFFFFF;
+  transition: all .5s;
+cursor: pointer;
 }
 
-.hero_headphone{
+.hero_button:hover{
+  background-color: #EBEBEB;
+  color: #16BE0F;
+}
+/* slider section */
 
+.slider_section{
+display: flex;
+justify-content: space-between;
+margin: var(--root_padding);
+margin-top: 8%;
 }
 
+.slider_content{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+gap: 20px;
+}
 
-/* Products section*/
+.slider_header{
+font-size: 48px;
+letter-spacing: 2px;
+}
+
+.slider_header span{
+  color: #00FF00;
+}
+
+.slider_detail{
+font-size: 32px;
+width: 600px;
+}
+
+.slider_button{
+  font-size: 24px;
+  border-radius: 15px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #16BE0F;
+  color: white;
+  height: 60px;
+width: 210px;
+transition: all .5s;
+cursor: pointer;
+}
+
+.slider_button:hover{
+  background-color: #EBEBEB;
+  color: #16BE0F;
+}
+
+.slider_img img{
+  width: 473px;
+  height: 472px;
+  border-radius: 50%;
+  border: #00FF00 solid 5px;
+}
+
+/* Products section */
 section.products {
   display: flex;
   justify-content: center;
@@ -221,7 +276,7 @@ section.products img {
   ); 
 }
 
-/* Footer*/
+/* Footer */
 footer {
   margin-top: 5%;
   margin-bottom: 1%;
