@@ -139,7 +139,7 @@ body {
   justify-content: space-between;
 }
 
-.hero_content {
+.hero_contents {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -171,6 +171,29 @@ body {
 .hero_button:hover {
   background-color: #ebebeb;
   color: #16be0f;
+}
+
+.hero_content{
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.hero_content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.hero_headphone {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.hero_headphone.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* products section */
@@ -284,6 +307,7 @@ section.products_section img {
 .atropos_section img {
   width: 100%;
   border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px #00ff00;
 }
 
 /* Footer */
@@ -297,7 +321,8 @@ footer {
   position: relative;
   bottom: 5%;
   left: 50%;
-  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-size: 1.5em;
   transform: translateX(-50%);
 }
 .bxl-youtube,
