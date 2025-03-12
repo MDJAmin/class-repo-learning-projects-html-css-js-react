@@ -10,6 +10,8 @@ const closeButton = document.querySelector(".close_button");
 const authIcon = document.querySelector("#authIcon");
 const logoutIcon = document.querySelector("#logoutIcon");
 const productItems = document.querySelectorAll(".product_item");
+const heroHeadphone = document.querySelectorAll(".hero_headphone")
+const heroContent = document.querySelectorAll(".hero_content")
 const body = document.body;
 const token = localStorage.getItem("token");
 
@@ -66,6 +68,8 @@ const initializeProductAnimations = () => {
     { threshold: 0.2 }
   );
 
+  heroContent.forEach((item)=> observer.observe(item))
+  heroHeadphone.forEach((item)=> observer.observe(item))
   productItems.forEach((item) => observer.observe(item));
 };
 
