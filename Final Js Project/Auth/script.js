@@ -48,7 +48,6 @@ const handleLoginFormSubmit = async (event) => {
     messageDiv.textContent = error.message;
   }
 };
-
 /* =======================
    Event Listeners Section
 ========================== */

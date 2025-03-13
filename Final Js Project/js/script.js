@@ -1,8 +1,4 @@
 "use strict";
-
-
-
-
 /* =======================
    Variables Section
 ========================== */
@@ -61,7 +57,7 @@ const handleResize = () => {
 // Handle logout functionality
 const handleLogout = () => {
   localStorage.removeItem("token");
-  window.location.href = "Pages/index.html";
+  window.location.href = "Auth/index.html";
 };
 
 // Initialize token-dependent UI
