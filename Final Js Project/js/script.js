@@ -68,8 +68,8 @@ const initializeProductAnimations = () => {
     { threshold: 0.2 }
   );
 
-  heroContent.forEach((item)=> observer.observe(item))
-  heroHeadphone.forEach((item)=> observer.observe(item))
+  heroContent.forEach((item) => observer.observe(item))
+  heroHeadphone.forEach((item) => observer.observe(item))
   productItems.forEach((item) => observer.observe(item));
 };
 
