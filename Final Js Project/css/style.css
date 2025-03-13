@@ -444,10 +444,8 @@ section.products_section img {
 }
 
 /* slider section */
-
 .slider_section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: var(--root_padding);
   margin-top: 8%;
@@ -498,6 +496,123 @@ section.products_section img {
   border: #00ff00 solid 5px;
 }
 
+@media (max-width: 1275px) {
+  
+.slider_header {
+  font-size: 42px;
+}
+
+.slider_detail {
+  font-size: 26px;
+  width: 500px;
+}
+
+.slider_button {
+  font-size: 20px;
+  height: 50px;
+  width: 190px;
+
+}
+
+.slider_img img {
+  width: 400px;
+  height: 400px;
+}
+
+}
+
+@media (max-width: 1070px) {
+  .slider_header {
+    font-size: 38px;
+  }
+  
+  .slider_detail {
+    font-size: 18px;
+    width: 405px;
+  }
+  
+  .slider_button {
+    font-size: 18px;
+    height: 45px;
+    width: 170px;
+  
+  }
+  
+  .slider_img img {
+    width: 300px;
+    height: 300px;
+  }
+  
+}
+
+@media (max-width: 870px) {
+  .slider_header {
+    font-size: 25px;
+  }
+  
+  .slider_detail {
+    font-size: 14px;
+    width: 405px;
+  }
+  
+  .slider_button {
+    font-size: 14px;
+    height: 40px;
+    width: 140px;
+  
+  }
+  
+  .slider_img img {
+    width: 200px;
+    height: 200px;
+  }
+  
+
+}
+
+@media (max-width: 740px) {
+  .slider_detail {
+    font-size: 12px;
+    width: 305px;
+  }
+}
+
+@media (max-width: 570px) {
+  .slider_section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+      }
+      .slider_img {
+        order: -1;
+        padding-right: 5%;
+      }
+}
+
+@media (max-width: 390px) {
+  .slider_header {
+    font-size: 20px;
+  }
+  
+  .slider_detail {
+    font-size: 14px;
+    width: 205px;
+  }
+  
+  .slider_button {
+    font-size: 12px;
+    height: 35px;
+    width: 120px;
+  
+  }
+  
+  .slider_img img {
+    width: 200px;
+    height: 200px;
+  }
+  
+}
+
 /* atropos section */
 
 .atropos_section {
@@ -514,10 +629,15 @@ section.products_section img {
   box-shadow: 0px 0px 20px 0px #00ff00;
 }
 
+@media (max-width: 390px) {
+  .atropos_section{
+    margin: 15% 0;
+  }
+}
+
 /* Footer */
 footer {
-  margin-top: 5%;
-  margin-bottom: 1%;
+margin: 5% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
