@@ -71,7 +71,7 @@
 //         console.log("Your number is 6")
 //     break
 //     default:
-//         console.log("Unvalid Number")
+//         console.log("Invalid Number")
 // }
 
 // let nextClass=false
