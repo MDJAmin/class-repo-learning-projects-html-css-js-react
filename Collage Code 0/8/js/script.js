@@ -7,8 +7,8 @@
 
 // aminFunc()
 
-// const func=prompt("enter your function name")
 
+// const func=prompt("enter your function name")
 // const aminCarOrder=carModel(15,"benz s500")
 
 // function carModel(bmw,benz){
