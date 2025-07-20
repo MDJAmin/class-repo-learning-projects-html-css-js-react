@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  overflow-x: hidden;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.items {
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: burlywood;
+  color: black;
+  font-size: 48px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  transform: translateX(400%);
+}
+
+section div:nth-child(odd) {
+  background-color: brown;
+  transform: translateX(-400%);
+}
+
+h1{
+    font-size: 60px;
+}
+
+.show{
+    transform: translateX(0) !important;
+}
