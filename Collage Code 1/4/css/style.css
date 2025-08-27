@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Iranyekan";
+  src: url("../assets/font/Qs_Iranyekan black.ttf");
+}
+
+body {
+  font-family: "Iranyekan";
+}
+
+nav {
+  background-color: rgb(16, 175, 200);
+  margin: 20px 15px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul,
+ul li,
+nav ul h1 {
+  display: inline;
+  padding: 10px;
+}
+
+.div {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+section.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.div p {
+  font-size: 0.7em;
+  justify-content: center;
+  text-align: center;
+}
+
+
