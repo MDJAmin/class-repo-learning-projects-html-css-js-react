@@ -1,5 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import GsapTo from "./pages/GsapTo";
+import Home from "./pages/Home";
+import GsapText from "./pages/GsapText";
+import GsapScrollTrigger from "./pages/GsapScrollTrigger";
+import GsapStagger from "./pages/GsapStagger";
+import GsapTimeline from "./pages/GsapTimeline";
+import GsapFromTo from "./pages/GsapFromTo";
+import GsapFrom from "./pages/GsapFrom";
+import "./App.css"
 const App = () => {
   return (
     <div className="bg-black min-h-screen w-full">

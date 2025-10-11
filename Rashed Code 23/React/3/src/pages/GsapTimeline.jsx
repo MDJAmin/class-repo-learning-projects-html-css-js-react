@@ -1,8 +1,5 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 
 const GsapTimeline = () => {
-  // TODO: Implement the gsap timeline
   const timeline = gsap.timeline({
     repeat: -1,
     repeatDelay: 1,
