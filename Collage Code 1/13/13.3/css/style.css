@@ -1,0 +1,121 @@
+/* 2. */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: linear-gradient(
+    45deg,
+    rgba(252, 142, 197, 1) 0%,
+    rgba(255, 141, 211, 1) 25%,
+    rgba(255, 161, 216, 1) 50%,
+    rgba(255, 193, 210, 1) 75%,
+    rgba(255, 224, 195, 1) 100%
+  );
+  /* background: linear-gradient(
+    90deg,
+    rgba(5, 5, 10, 1) 0%,
+    rgba(5, 5, 10, 1) 7.692%,
+    rgba(9, 10, 14, 1) 7.692%,
+    rgba(9, 10, 14, 1) 15.385%,
+    rgba(13, 14, 18, 1) 15.385%,
+    rgba(13, 14, 18, 1) 23.077%,
+    rgba(18, 19, 22, 1) 23.077%,
+    rgba(18, 19, 22, 1) 30.769%,
+    rgba(22, 23, 26, 1) 30.769%,
+    rgba(22, 23, 26, 1) 38.462%,
+    rgba(26, 27, 30, 1) 38.462%,
+    rgba(26, 27, 30, 1) 46.154%,
+    rgba(30, 31, 34, 1) 46.154%,
+    rgba(30, 31, 34, 1) 53.846%,
+    rgba(34, 35, 38, 1) 53.846%,
+    rgba(34, 35, 38, 1) 61.538%,
+    rgba(38, 39, 42, 1) 61.538%,
+    rgba(38, 39, 42, 1) 69.231%,
+    rgba(41, 42, 45, 1) 69.231%,
+    rgba(41, 42, 45, 1) 76.923%,
+    rgba(44, 45, 48, 1) 76.923%,
+    rgba(44, 45, 48, 1) 84.615%,
+    rgba(46, 47, 51, 1) 84.615%,
+    rgba(46, 47, 51, 1) 92.308%,
+    rgba(48, 49, 53, 1) 92.308% 100%
+  ); */
+}
+
+/* Open modal button */
+#open-modal {
+  background: linear-gradient(135deg, #ff0080, #7928ca, #2afadf);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#open-modal:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 0, 128, 0.4);
+  background: linear-gradient(135deg, #2afadf, #7928ca, #ff0080);
+}
+
+/* Modal container */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: linear-gradient(135deg, rgba(37, 117, 252, 0.95), rgba(122, 40, 202, 0.95));
+  color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+  opacity: 0;
+  z-index: 100;
+}
+
+/* Show modal animation */
+.modal.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* Close button */
+#close-modal {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+#close-modal:hover {
+  transform: rotate(90deg);
+  color: #ffb3ec;
+}
+
+/* Optional: background blur when modal is open */
+body.modal-open::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  z-index: 50;
+}
