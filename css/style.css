@@ -50,6 +50,15 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.home {
+  color: rgba(255, 255, 255, 0.571);
+  transition: color 0.5s;
+}
+
+.home:hover {
+  color: white;
+}
+
 /* Each Link Button */
 .links a {
   text-decoration: none;
