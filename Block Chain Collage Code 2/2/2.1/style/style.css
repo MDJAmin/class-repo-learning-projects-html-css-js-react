@@ -1,0 +1,19 @@
+#lamborghini-revuelto{
+    /* width: 200px; */
+    /* height: 400px; */
+}
+
+.img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.car{
+    box-shadow: 1px 3px 4px black;
+}
+
+.red{
+    color: red;
+    font-weight: bolder;
+
+}
