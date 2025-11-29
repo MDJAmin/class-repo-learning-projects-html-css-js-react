@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <title>Web Dev Topics — HTML Reference & Examples</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        line-height: 1.6;
+        padding: 24px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #111827;
+      }
+      pre {
+        background: #f6f8fa;
+        padding: 12px;
+        border-radius: 8px;
+        overflow: auto;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Noto Mono",
+          monospace;
+      }
+      .meta {
+        font-size: 0.95rem;
+        color: #6b7280;
+      }
+      .section {
+        margin-bottom: 28px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #e6e9ef;
+      }
+      .note {
+        background: #fff7ed;
+        padding: 10px;
+        border-left: 4px solid #f59e0b;
+        border-radius: 6px;
+      }
+      a.button {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 8px 12px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+      .row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .col {
+        flex: 1 1 320px;
+        min-width: 280px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Development Topics — Quick Reference + Examples</h1>
+    <p class="meta">
+      A single HTML file that documents the requested topics and shows small, copy-pasteable
+      code blocks.
+    </p>
+
+    <div
+      class="section"
+      id="what-html-css-js"
+    >
+      <h2>What are HTML, CSS, and JavaScript?</h2>
+      <p>
+        <strong>HTML</strong> — structure and content of the page (elements like headings,
+        paragraphs, lists, images).
+      </p>
+      <p><strong>CSS</strong> — styling: colors, layout, spacing, fonts.</p>
+      <p>
+        <strong>JavaScript</strong> — behavior: interactivity, DOM manipulation, network calls.
+      </p>
+      <p>
+        Check a live demo showing the differences on CodePen:
+        <a
+          href="https://codepen.io/MDJAmin"
+          target="_blank"
+          rel="noopener"
+          >https://codepen.io/MDJAmin</a
+        >
+      </p>
+
+      <h3>Minimal example (HTML + CSS + JS)</h3>
+      <pre><code>&lt;!-- index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;HTML, CSS, JS example&lt;/title&gt;
+  &lt;style&gt;
+    body { font-family: sans-serif; }
+    .btn { background:#2563eb; color:#fff; padding:8px 12px; border-radius:6px; border:none; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello from HTML&lt;/h1&gt;
+  &lt;button class="btn" id="clickMe"&gt;Click me (JS)&lt;/button&gt;
+
+  &lt;script&gt;
+    document.getElementById('clickMe').addEventListener('click', function(){
+      alert('This alert is powered by JavaScript');
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div
+      class="section"
+      id="learning-map"
+    >
+      <h2>Web Development Learning Map — Front-end &amp; Back-end</h2>
+      <div class="row">
+        <div class="col">
+          <h3>Front-end</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Frameworks: React, Vue, Svelte, Angular</li>
+            <li>
+              Tooling: bundlers (Vite, webpack), package managers, testing, accessibility
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Back-end</h3>
+          <ul>
+            <li>Languages: Node.js (JavaScript), Python, Ruby, PHP, Java, Go</li>
+            <li>Databases: PostgreSQL, MySQL, MongoDB</li>
+            <li>APIs, authentication, servers, deployment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section"
+      id="code-editor"
+    >
+      <h2>Install Code Editor</h2>
+      <p>
+        Recommended: <strong>Visual Studio Code (VS Code)</strong>. Set a color theme and
+        enable auto save.
+      </p>
+      <h3>Auto save &amp; color theme (settings)</h3>
+      <pre><code>// Add to your &lt;code&gt;settings.json&lt;/code&gt; in VS Code:
+{
+  "workbench.colorTheme": "Default Dark+",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
+}</code></pre>
+
+      <h3>Extensions</h3>
+      <p>Essential:</p>
+      <pre><code>- Prettier - Code formatter
+- HTML Boilerplate
+- HTML CSS Support
+- Live Server</code></pre>
+
+      <p>Optional:</p>
+      <pre><code>- Material Icon Theme
+- vscode-pets
+- Code Spell Checker
+- Color Highlight
+- Image preview
+- Auto Rename Tag</code></pre>
+
+      <h3>Default formatter & format on save</h3>
+      <pre><code>// put this in settings.json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}</code></pre>
+    </div>
+
+    <div
+      class="section"
+      id="basics-website-browser"
+    >
+      <h2>Basic concepts of Website and Browser</h2>
+      <p>
+        A website is a collection of files (HTML, CSS, JS, images) served by a web server. The
+        browser (Chrome, Firefox, Safari) requests those files, parses HTML into the DOM,
+        applies CSS, and executes JS.
+      </p>
+    </div>
+
+    <div
+      class="section"
+      id="basic-html-structure"
+    >
+      <h2>Basic HTML Structure</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+    &lt;title&gt;Document title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- page content --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div
+      class="section"
+      id="working-with-texts"
+    >
+      <h2>Working with Texts</h2>
+
+      <h3>Headings</h3>
+      <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+...
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+
+      <h3>Paragraphs, line break, horizontal rule</h3>
+      <pre><code>&lt;p&gt;This is paragraph text.&lt;/p&gt;
+&lt;br /&gt; &lt;!-- line break --&gt;
+&lt;hr /&gt; &lt!-- horizontal rule --&gt;</code></pre>
+    </div>
+
+    <div
+      class="section"
+      id="text-formatting"
+    >
+      <h2>Text Formatting</h2>
+      <pre><code>&lt;b&gt;Bold (b)&lt;/b&gt;
+&lt;strong&gt;Strong (strong)&lt;/strong&gt;
+&lt;i&gt;Italic (i)&lt;/i&gt;
+&lt;em&gt;Emphasis (em)&lt;/em&gt;</code></pre>
+      <p class="note">
+        Note: &lt;strong&gt; and &lt;em&gt; are semantic. Use them for accessibility/SEO;
+        &lt;b&gt; and &lt;i&gt; are presentational.
+      </p>
+    </div>
+
+    <div
+      class="section"
+      id="special-text-tags"
+    >
+      <h2>Special Text Tags</h2>
+      <pre><code>&lt;mark&gt;Highlighted text&lt;/mark&gt;
+&lt;ins&gt;Inserted / underlined text&lt;/ins&gt;
+&lt;sub&gt;H₂O (subscript)&lt;/sub&gt;
+&lt;sup&gt;x² (superscript)&lt;/sup&gt;
+&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+&lt;address&gt;
+  Example Corp.
+  &lt;br&gt;123 Example Lane
+&lt;/address&gt;
+&lt;cite&gt;— Title of a work&lt;/cite&gt;</code></pre>
+
+      <h3>What is an attribute?</h3>
+      <p>
+        An attribute adds extra information to an element. Example:
+        <code>&lt;a href="https://example.com" target="_blank"&gt;link&lt;/a&gt;</code>. Here
+        <code>href</code> and <code>target</code> are attributes.
+      </p>
+    </div>
+
+    <div
+      class="section"
+      id="comments"
+    >
+      <h2>Comments</h2>
+      <pre><code>&lt;!-- This is an HTML comment --&gt;</code></pre>
+    </div>
+
+    <div
+      class="section"
+      id="footer"
+    >
+      <h2>Extras &amp; Tips</h2>
+      <ul>
+        <li>Use <strong>Live Server</strong> to preview changes automatically.</li>
+        <li>
+          Use <strong>Prettier</strong> as the default formatter and enable
+          <code>editor.formatOnSave</code>.
+        </li>
+        <li>
+          Try small CodePen experiments to visually separate HTML / CSS / JS panes. Example
+          author: MDJAmin —
+          <a
+            href="https://codepen.io/MDJAmin"
+            target="_blank"
+            rel="noopener"
+            >CodePen</a
+          >.
+        </li>
+      </ul>
+    </div>
+
+    <footer class="meta">
+      Generated: HTML quick guide — contains code blocks with examples for copy-paste.
+    </footer>
+  </body>
+</html>

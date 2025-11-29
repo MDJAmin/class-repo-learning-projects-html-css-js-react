@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+section.Product-Section div img {
+  width: 200px;
+}
+
+nav ul li {
+  display: inline;
+  /* gap: 20px; */
+  margin: 10px;
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+nav ul li a {
+  color: black;
+}
+
+/* 
+.Product-Section div,
+p {
+  display: inline;
+} */
+
+.red {
+  width: 400px;
+  height: 400px;
+  padding: 100px;
+  background-color: red;
+  margin: 10px 50px 10px 5px;
+}
+
+.red div {
+  border-radius: 1000000000000000000000000000000005px;
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+}
