@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section:nth-child(1) {
+  background-color: rgb(183, 183, 183);
+}
+section:nth-child(2) {
+  background-color: rgb(0, 213, 255)
+}
+section:nth-child(3) {
+  background-color: rgb(255, 0, 204);
+}
+section div {
+  width: 100px;
+  height: 100px;
+}
+
+section div.box-red {
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  top: 10px;
+  left: 40%;
+  z-index: 2;
+}
+
+section div.box-yellow {
+  background-color: yellow;
+  position: absolute;
+  z-index: 1;
+  left: 35%;
+  top: 15px;
+}
+
+section div.box-green {
+  background-color: green;
+  position: absolute;
+  left: 30%;
+  top: 20px;
+}
