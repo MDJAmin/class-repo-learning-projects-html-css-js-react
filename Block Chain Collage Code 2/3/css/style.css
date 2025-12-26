@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.S1 {
+  background-color: rgba(21, 21, 165, 0.819);
+  display: flex;
+  /* flex-direction: column; */
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+section.S1 div {
+  background-color: aliceblue;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+section.S2 {
+  background-color: rgba(21, 21, 165, 0.819);
+  display: flex;
+  /* flex-direction: column; */
+  width: 700px;
+  height: 300px;
+}
+
+section.S2 div {
+  background-color: aliceblue;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  /* margin: 0 20%; */
+}
