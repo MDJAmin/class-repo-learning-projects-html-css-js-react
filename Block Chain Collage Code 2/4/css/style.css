@@ -17,7 +17,7 @@ section:nth-child(1) {
   background-color: rgb(183, 183, 183);
 }
 section:nth-child(2) {
-  background-color: rgb(0, 213, 255)
+  background-color: rgb(0, 213, 255);
 }
 section:nth-child(3) {
   background-color: rgb(255, 0, 204);
