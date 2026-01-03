@@ -1,143 +1,116 @@
 "use strict";
 
-// console.log("Hello!");
+// console.log(10 + 5)
+// console.log(10 - 5)
+// console.log(10 / 5)
+// console.log(10 * 5)
+// console.log(10 ** 5)
+// // pow
+// // ^
+// console.log(10 % 5)
 
-// Javascript types
-// 1. Number
-// 2. String
-// 3. Boolean
-// 4. Undefined
-// 5. Null
-// 6. Symbol
-// 7. Object
+// console.log(10 + "10"); // 1010
+// console.log(10 + "Hello"); // 10Hello
+// console.log(10 - "5");
+// console.log(10 - "Hello");
+// console.log(10 * "Hello");
+// console.log(10 / "Hello");
 
-// ---------------------------
+// console.log(10 + "60");
+// console.log(10 + "60" + 15);
+// console.log(10 + "60" + 15 - "10");
+// console.log(10 + "60" + 15 - "10" * 2);
+// console.log(10 + "60" + 15 - "10" * 2 + "1");
 
-// 1. Number
-// console.log(19);
-// console.log("19");
-// console.log(Number("131"));
-// console.log(Number("Hello")); // NaN = Not a Number
+// console.log((10 + 5) * 2)
 
-// ---------------------------
+// const sum = prompt()
 
-// 2. String
-// console.log("Hello World!");
-// console.log("Hello World!");
-// console.log("There's No one Here");
-// console.log("There's No one Here");
+// console.log(5 > 2) // boolean
+// console.log(5 < 2)
+// console.log(5 <= 5)
+// console.log(5 < 5)
+// console.log(5 >= 2)
+// console.log(5 == 2)
+// console.log(5 == 5)
 
-// ---------------------------
+// console.log(5 === 2)
+// console.log(5 === 5)
 
-// 3. Boolean
-true; // 1
-false; // 0
+// const target1 = "8"
+// const target2 = 8
 
-// console.log(true);
-// console.log(false);
+// console.log(target1 === target2)
+// console.log(target1 == target2)
 
-// ---------------------------
+// console.log(5 !== 5);
+// console.log(5 !== 10);
+// console.log(5 !== "Hello");
+// console.log("Hello" !== "Hello");
 
-// console.log("Hello World!");
-// console.log("Hello World!");
-// console.log("Hello World!");
-// console.log("Hello World!");
-// console.log("Hello World!");
-// console.log("Hello World!");
-// console.log("Hello World!");
-// console.log("Hello World!");
+// let plus = 5;
+// console.log(plus++);
+// console.log(plus + 10);
+// console.log(plus--);
 
-// var name
-// let name
-// const name
+// let num = plus + 10
+// console.log(num)
 
-// var fName = "Amin";
-var age = 19;
-var description =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+// let number = +prompt("Enter Number:");
+// if (number % 2 === 0) {
+//   console.log("Even");
+// } else {
+//   console.log("odd");
+// }
+// console.log(typeof number);
 
-// console.log(description);
-// console.log("Hello My name is " + fName + " And i'm " + age + " I do " + description)
-// console.log(`Hello My name is ${fName}`)
-// - , + , / , * , %
-// **
+// if (4 + "3" === 7) {
+//   console.log("perfect!");
+// } else {
+//   console.log("wrong");
+// }
 
-// let & const
+// console.log(4 + "3" === 7);
 
-// var text = "Hello World!"
-// var text = "dvheqwoihvek"
+// const a = "hello";
+// console.log((a += "hi"));
 
-// console.log(text)
+// const
+// let b
+// var a
 
-const idNumber = "0912345678";
+// console.log(!false)
+// console.log(!true)
 
-// let fName = "Amin";
+// var batman = "✅";
+// if (!(batman === "❌")) {
+//   console.log("I'm batman");
+// } else {
+//   console.log("I'm not batman");
+// }
 
-// idNumber = "1343214"
+// console.log();
 
-// fName = "Amir";
+// const massage = "Hello world!";
 
-// console.log(fName)
+// alert(massage);
 
-// let amin&ali
-// let 2141amin = "ascwa"
-let amin131 = "123";
+// // ||
+// // &&
+// alert(null || 2 || undefined);
+// alert(1 && null && 2);
 
-// let _name
+// let age = +prompt("Enter you'r age:");
+// if (age >= 18 && age <= 60) {
+//   alert("Welcome");
+// } else {
+//   alert("You can't enter");
+// }
 
-// let $name
+// let number = +prompt("enter num");
+// let numberChecker = number >= 10 ? "grater than 10" : "lower than 10";
+// alert(numberChecker)
 
-// "hello-world"
-// "hello_world"
-
-// let my_text;
-
-// let MyText;
-
-// let myTextIsHere;
-
-// console.log(my_text)
-// console.log(myTextIsHere)
-
-// var text = "Hello"
-// console.log(text)
-// var text = "Hello2"
-// console.log(text)
-// var text;
-// console.log(text)
-
-// var text2;
-// console.log(text2)
-
-let b = 7;
-let a = 1;
-// console.log(a);
-a = b;
-// console.log("a:", a);
-// console.log("b:", b);
-
-a = "Hello world!";
-// console.log(a);
-
-const c = 15;
-// c = 10 ❌
-
-const number2 = 1;
-const string = "Batman";
-const boolean = true;
-
-// console.log(typeof number2)
-// console.log(typeof string)
-// console.log(typeof boolean)
-// console.log(typeof NaN)
-
-// let fName = prompt("Enter You'r name","Amin")
-// console.log(fName);
-
-let firstNumber = +prompt("Enter first Number");
-let secondNumber = +prompt("Enter second Number");
-let lastNumber = +prompt("Enter last Number");
-
-const sum = firstNumber + secondNumber + lastNumber;
-
-console.log(sum);
+let number = +prompt("Enter you'r number:");
+let output = number === 100 ? "Perfect score!" : number === 80 ? "Good score" : "end";
+console.log(output)
